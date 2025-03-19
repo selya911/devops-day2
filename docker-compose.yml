@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:  # 👈 Name of the service (you can change it)
+    build: .  
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    restart: always
+
